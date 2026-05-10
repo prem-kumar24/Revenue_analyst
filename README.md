@@ -3,7 +3,110 @@
 A professional, interactive dashboard built with Streamlit and Plotly for analyzing sales and revenue data in real-time.
 
 ## Features
+Sales & Revenue Dashboard
+A professional, interactive dashboard built with Streamlit and Plotly for analyzing sales and revenue data in real-time.
+🚀 Live Demo: [Add your Streamlit Cloud link here]
 
+✨ Features
+📌 KPI Cards
+
+Total Revenue — Sum of all sales transactions
+Total Transactions — Count of all transactions
+Average Order Value — Mean transaction value
+Top Region by Revenue — Best performing region
+
+📈 Interactive Charts
+
+Revenue Trend — Line chart showing month-over-month revenue for last 6 months
+Category Sales — Bar chart displaying total revenue by product category
+Regional Distribution — Pie chart showing revenue split across regions
+Top 5 Products — Horizontal bar chart of best-performing products
+
+🔍 Interactive Filters
+
+Date Range Slider — Filter data by custom date ranges
+Category Dropdown — Filter by product category (Electronics, Accessories, etc.)
+Region Dropdown — Filter by sales region (North, South, East, West)
+
+📥 Data Export
+
+Download filtered data as CSV for further analysis
+
+
+🛠️ Tech Stack
+ToolPurposePythonCore languageStreamlitWeb dashboard frameworkPlotlyInteractive chartsPandasData manipulationNumPyNumerical operations
+
+📂 File Structure
+revenueanalyst/
+├── dashboard.py        # Main application file
+├── requirements.txt    # Python dependencies
+└── README.md           # Project documentation
+
+📊 Sample Data
+The dashboard includes built-in sample data — no CSV files needed!
+
+6 months of historical data (180+ days)
+500+ transactions with realistic values
+10 products across 4 categories
+4 sales regions (North, South, East, West)
+Prices ranging from $30 (Charger) to $1,000+ (Laptop)
+
+
+🎨 Dashboard Layout
+┌─────────────────────────────────────────┐
+│         Sales & Revenue Dashboard       │
+├─────────────────────────────────────────┤
+│  ┌──────┐  ┌──────┐  ┌──────┐  ┌────┐  │
+│  │ Rev  │  │Trans │  │ AOV  │  │Top │  │
+│  └──────┘  └──────┘  └──────┘  └────┘  │
+├─────────────────────────────────────────┤
+│  ┌─────────────┐   ┌─────────────┐      │
+│  │Revenue Trend│   │Category Sale│      │
+│  └─────────────┘   └─────────────┘      │
+├─────────────────────────────────────────┤
+│  ┌─────────────┐   ┌─────────────┐      │
+│  │  Regional   │   │ Top 5 Prod  │      │
+│  │Distribution │   │  Revenue    │      │
+│  └─────────────┘   └─────────────┘      │
+├─────────────────────────────────────────┤
+│       Detailed Sales Data Table         │
+└─────────────────────────────────────────┘
+
+⚙️ Customization
+Add Your Own Data
+Replace the sample data function with your own CSV:
+pythondf = pd.read_csv('your_data.csv')
+df['Date'] = pd.to_datetime(df['Date'])
+Change Colors
+
+Pie charts → color_discrete_sequence
+Bar/heatmaps → color_continuous_scale
+Line charts → line=dict(color='#1f77b4')
+
+
+🚀 Future Enhancements
+
+ Year-over-year comparisons
+ Forecasting with trend lines
+ PDF report export
+ Real-time data integration
+ Database connectivity
+
+
+📚 Resources
+
+Streamlit Documentation
+Plotly Documentation
+
+
+v1.0 — Initial release with core KPI cards, 4 visualizations, interactive filters, and CSV export.ShareContentSales & Revenue Dashboard
+A professional, interactive dashboard built with Streamlit and Plotly for analyzing sales and revenue data in real-time.
+
+Features
+📊 KPI Cards
+Total Revenue - Sum of all sales transactions (formatted with commas)
+Total Transactions - Count of all transactions
+Averagpasted
 ### 📊 KPI Cards
 - **Total Revenue** - Sum of all sales transactions (formatted with commas)
 - **Total Transactions** - Count of all transactions
